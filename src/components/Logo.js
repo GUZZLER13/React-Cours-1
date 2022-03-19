@@ -6,7 +6,7 @@ const Logo = () => {
             <div className="logo">
                 {/* Attention les images importées depuis la balise img sont accessibles dans "public" */}
                 <img src="./logo192.png" alt="logo react" />
-                <h3>React World</h3>
+                <h1>React World</h1>
 
             </div>
         </div>
