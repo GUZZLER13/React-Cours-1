@@ -4,7 +4,7 @@ import Card from './Card';
 
 const Countries = () => {
     const [data, setData] = useState([])
-    const [rangeValue, setRangeValue] = useState(250)
+    // const [rangeValue, setRangeValue] = useState(250)
     const [selectedRadio, setSelectedRadio] = useState("")
     const radios = ["Africa", "America", "Asia", "Europe", "Oceania",]
 
@@ -18,13 +18,13 @@ const Countries = () => {
     return (
         <div className='countries'>
             <ul className="radio-container">
-                <input
+                {/* <input
                     type="range"
                     min="1"
                     max="250"
                     defaultValue={rangeValue}
                     onChange={(e) => setRangeValue(e.target.value)}
-                />
+                /> */}
                 {radios.map((continent) => (
                     <li>
                         {/* Le "name" sert à lier les radios ensemble pour pouvoir n'en sélectionner qu'un */}
@@ -49,7 +49,7 @@ const Countries = () => {
                 {data
                     .filter((country) => country.continents[0].includes(selectedRadio))
                     .sort((a, b) => (b.population - a.population))
-                    .slice(0, rangeValue)
+                    // .slice(0, rangeValue)
                     .map((pays, index) => (
                         <Card key={index} country={pays} />
                     ))}
