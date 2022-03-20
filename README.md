@@ -1,4 +1,4 @@
-## [Link to this website (hosted on firebase)](https://react-hosting-flags.web.app/).
+## [Link to this website (hosted on firebase)](https://react-hosting-flags.web.app/){:target="_blank"}
 
 ![screenshot of this application in react](CoursReact.png)
 
